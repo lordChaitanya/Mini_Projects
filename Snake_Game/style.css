@@ -14,6 +14,7 @@ html, body {
     --bg-primary-color: #0c0c0c;
     --text-primary-color: #f0f0f0;
     --border-primary-color: #333333;
+    --bg-fill-color: #e9f0e9;
 
     /* Spacing Variables */
     --space-xs: 4px;
@@ -67,11 +68,14 @@ section {
     border: 1px solid var(--border-primary-color);
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(80px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(80px,1fr));
 }
 .block{
-    width: 30px;
-    height: 30px;
+
     border: 1px solid var(--border-primary-color);
+}
+
+.fill{
+    background-color: var(--text-primary-color);
 }
